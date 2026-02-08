@@ -5,6 +5,7 @@ import java.util.*;
 public class LeftRotateDplace {
     public static void main(String[] args) {
         //input - arr[] ={1,2,3,4,5,6,7}
+        //d=2 (no of places to left rotate)
         //output - arr[] = {3,4,5,6,7,1,2}
 
         int arr[] = {1, 2, 3, 4, 5, 6, 7};
@@ -44,7 +45,8 @@ public class LeftRotateDplace {
 
 
 //For BruteForce approach to Left rotate D places Time and Space Complexities
-        //Time Complexity = O(d) +O(length-d) + O(d) =
+        //Time Complexity = O(d) +O(length-d) + O(d) =O(n+d)
+        //Space Complexity = O(n)
     }
 }
 
