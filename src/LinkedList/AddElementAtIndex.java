@@ -70,7 +70,8 @@ public class AddElementAtIndex {
         l1.addFirst(20);
         l1.addNode(40);
         l1.addNode(50);
-       l1.addatIndex(10,30);
+        l1.addatIndex(3,50);
+       //l1.addatIndex(10,30); ----For Index out of Bounds Exception
         l1.printLinkedList();
 
     }
