@@ -19,6 +19,7 @@ public class Intro {
 
         p1.next = p2;
         p2.next = p3;
+        Node head = p1;
 
         System.out.println(p1.next);
         System.out.println(p2.next);
