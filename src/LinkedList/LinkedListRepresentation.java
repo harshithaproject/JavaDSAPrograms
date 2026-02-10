@@ -35,7 +35,6 @@ public class LinkedListRepresentation {
         l1.head =p1;
         l1.printLinkedList();
 
-
     }
 }
 

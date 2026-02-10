@@ -1,11 +1,13 @@
 package LinkedList;
+
 import java.util.*;
 
-class LinkedList1{
+class LinkedList1 {
     Node head;
-    void printLastButOneLinkedListNode(){
+
+    void printLastButOneLinkedListNode() {
         Node curr = head;
-        while(curr!= null &&curr.next == null){
+        while (curr.next.next != null ) {// for last 2 node elements to skip from printing them
             System.out.println(curr.data);
             curr = curr.next;
         }
@@ -14,13 +16,20 @@ class LinkedList1{
 
 
 public class IterateLastButOneNode {
-    LinkedList1 l1 = new LinkedList1();
+    public static void main(String[] args) {
+        LinkedList1 l1 = new LinkedList1();
 
-    Node p1 = new Node(10);
-    Node p2 = new Node(20);
-    Node p3 = new Node(30);
-    Node p4 = new Node(40);
+        Node p1 = new Node(10);
+        Node p2 = new Node(20);
+        Node p3 = new Node(30);
+        Node p4 = new Node(40);
 
+        p1.next =p2;
+        p2.next =p3;
+        p3.next =p4;
+        l1.head =p1;
+        l1.printLastButOneLinkedListNode();
+    }
 
 
 }
