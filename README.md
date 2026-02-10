@@ -7,4 +7,5 @@ Linked List
 
 Adding an element to LinkedList
 
-![Uploading image.png…]()
+<img width="827" height="590" alt="image" src="https://github.com/user-attachments/assets/5e82efce-5427-4f44-8770-86c2c7f99d8d" />
+
