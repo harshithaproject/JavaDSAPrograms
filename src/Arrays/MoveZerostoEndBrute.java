@@ -17,9 +17,19 @@ public class MoveZerostoEndBrute {
         }
 
         for(int i=0; i<li.size();i++){
+            arr[i] = li.get(i);
+        }
+        int nonzero = li.size();
 
+        for(int i =nonzero;i< arr.length;i++){
+            arr[i]=0;
         }
 
-        System.out.print(li);
+        //System.out.print(li);
+        System.out.println(Arrays.toString(arr));
+
+        //Time complexity = First loop -O(N) & Second loop - O(x)  & Third Loop - O(N-x)
+                          //= O(2N)
+        //Space Complexity = O(x) -> x is no.of non zero numbers.
     }
 }
